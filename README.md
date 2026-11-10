@@ -1,10 +1,14 @@
 # spl5-bid-section-entry
 
+[![GitHub](https://img.shields.io/badge/GitHub-qiwen--bot/spl5--bid--section--entry-181717?logo=github)](https://github.com/qiwen-bot/spl5-bid-section-entry)
+
 用内置浏览器在 **SPL5 建设工程平台**（汕尾 / 云浮 / 韶关等）快速录入
 「建设工程招标项目标段」测试数据，并确认真的落库。
 
 An Agent Skill for entering construction-engineering **bid section** test data on the
 SPL5 public-resource trading platform and verifying that it reaches the database.
+
+> **仓库地址**：<https://github.com/qiwen-bot/spl5-bid-section-entry>
 
 标段是建设工程交易申请下面的一级子单据：字段多、必填规则硬、校验全在后端 service 里。
 这份 skill 把「要填什么、填什么值、按什么顺序保存、怎么确认存上了」固化下来。
@@ -30,6 +34,14 @@ SPL5 public-resource trading platform and verifying that it reaches the database
 ---
 
 ## 安装
+
+### 方式一：直接 clone
+
+```bash
+git clone https://github.com/qiwen-bot/spl5-bid-section-entry.git
+```
+
+### 方式二：手动放置
 
 把整个 `spl5-bid-section-entry/` 放进你的 agent 的 skills 目录：
 
@@ -67,6 +79,8 @@ skill 由 agent 按 `SKILL.md` 里的 Procedure 自动执行。典型触发语�
 | [`references/swggzyjy-bd-panels.md`](references/swggzyjy-bd-panels.md) | 面板与控件对照（汕尾）：页签、面板 id、字段 name、custom.jsp 联动 |
 | [`references/verify-bid-section.md`](references/verify-bid-section.md) | 落库核对：七表 SQL、表名看串对照、04 必填矩阵 |
 | [`references/cases.md`](references/cases.md) | 真实案例 A~E：完整录入闭环、入口选择、暂存 vs 保存、502 判别 |
+
+在线浏览：<https://github.com/qiwen-bot/spl5-bid-section-entry/tree/main>
 
 ---
 
