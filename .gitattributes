@@ -1,0 +1,8 @@
+# 默认按文本处理，仓库内统一用 LF
+* text=auto eol=lf
+
+# 二进制资源不参与换行转换
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jar binary
